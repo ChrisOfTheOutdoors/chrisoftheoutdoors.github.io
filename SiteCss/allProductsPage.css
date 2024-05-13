@@ -1,0 +1,42 @@
+.section {display: flex;
+    padding: 5.8%;
+    background-color: #fff;
+    border-radius: 12px;
+    
+    margin-top: 70px; /* Adjust based on navbar height */ flex-direction: column;
+        padding: 40px;
+        margin-top: 90px; /* Ensure the section content is below the navbar */ padding: 20px;}
+
+.imageContainer {
+    flex: 1;
+    margin-right: 80px; /* Assuming there's a gap between the image and text */
+    background-color: #dde1e6;
+    border-radius: 12px;
+    position: relative; margin-right: 0;
+    margin-bottom: 40px;
+}
+
+.content {
+    justify-content: center;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.headline {
+    color: #21272a;
+    font-weight: 700;
+    line-height: normal; /* 110% line height */
+    margin-top: 28px; /* space from caption to headline */}
+
+.paragraph {
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 1.4; /* 140% line height */
+    color: #21272a;}
+
+.buttons-group {flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; display: flex;
+    gap: 16px;}
+

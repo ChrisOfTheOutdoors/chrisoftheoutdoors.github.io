@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/SiteCss/global.css"> -->
+    <style>
+        /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0056b3;
+}
+
+.productBlurb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f4f4f4;
+    max-width: 80vw;
+    margin: 0px auto;
+}
+
+.zingerLeft, .zingerRight {
+    flex: 1;
+}
+
+.zingerLeft h3 {
+    margin: 0;
+    color: #333;
+}
+
+.zingerSub {
+    color: #666;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons-group {
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .productBlurb {
+        flex-direction: column;
+    }
+
+    .zingerLeft, .zingerRight {
+        flex: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .buttons-group {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+
+<section class="productBlurb">
+    <div class="zingerLeft">
+        <h3>Zinger about product as the last word.</h3>
+        <p class="zingerSub">
+            Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc. 
+        </p>
+    </div>
+    <div class="zingerRight buttons-group">
+        <button class="button primary-button">Primary Action</button>
+        <button class="button secondary-button">Secondary Action</button>
+    </div>
+</section>
+</body>
+</html>
+

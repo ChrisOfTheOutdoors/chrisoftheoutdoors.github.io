@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .productBlurb {
+        flex-direction: column;
+    }
+}
+
+    .productBlurb {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #f4f4f4;
+        max-width: 80vw;
+        margin: 0px auto;
+    }
+
+    

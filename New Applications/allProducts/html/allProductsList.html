@@ -1,0 +1,34 @@
+<section class="allProducts" id="allProductsList">
+    <div id="activeFilters">
+        <p>Active Filters:</p>
+        <div>
+            <button id="filter1" onclick="removeFilter1()">Filter 1 text</button>
+            <button id="filter2" onclick="removeFilter2()">Filter 2 text</button>
+            <button id="filter3" onclick="removeFilter3()">Filter 3 text</button>
+        </div>
+    </div>
+    <div class="filterList">
+        <!--create a dropdown with 5 options-->
+        <select name="newOrExisting" id="newOrExistingFilter">
+            <option value="all"></option>
+            <option id="newFilterBtn" value="New Purchase Options">New Purchase Options</option>
+            <option id="existingFilterBtn" value="Existing Loan Options">Existing Loan Options</option>
+        </select>
+        <select name="categoryFilter" id="categoryFilter">
+            <option value="all"></option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+        </select>
+        <select name="rateFilter" id="categoryFilter">
+            <option value="all"></option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+        </select>
+          
+    </div>
+    <button class="button primary-button" onclick="viewAll()">View All</button>
+</section>

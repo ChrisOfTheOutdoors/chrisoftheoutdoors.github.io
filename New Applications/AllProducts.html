@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="/SiteCss/global - Copy.css">
+    
+
+    <!-- Page Specific Styles 
+    <link rel="stylesheet" href="/New Applications/allProducts.css"> -->
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+    
+    <!-- Scripts -->
+    
+
+</head>
+<body>
+    <div class="navBar">
+        <div id="menuEffects">
+            <img id="menuStripes" src="/Assets/Backgrounds/Stripes.svg" alt="stripes">
+            <div id="menuFader"></div>
+        </div>
+        <img class="mcLogoColor" src="/Assets/Logos/mcLogoColor.svg" alt="Mortgage Center">
+        <div class="menuRt">
+            <a href="menu.html"><img class="searchIcon navbarItem" id="navSearch" src="/Assets/Icons/search-solid.svg" alt="searchIcon"></a>
+            <a id="navPhoneNum" class="phoneNum navbarItem" href="tel:800-353-4449">800-353-4449</a>
+            <button id="navLoginBtn" class="primary-button ctaBtnPri navbarItem" onclick="loginModal()">Login</button>
+            <button class="hamburger navbarItem" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav id="menu" class="menu">
+            <ul class="menuList">
+                <div class="menuTop">
+                    <h3 class="menuTitle">MENU</h3>
+                </div>
+                <p><a class="menuItem" href="">First Time Home Buyers</a></p>
+                <p><a class="menuItem" href="about.html">New Applications</a></p>
+                <p><a class="menuItem" href="contact.html">Existing Accounts</a></p>
+                <p><a class="menuItem" href="menu.html">Mortgage University</a></p>
+                <p><a class="menuItem" href="menu.html">Credit Union Partners</a></p>
+                <p><a class="menuItem" href="menu.html">About Us</a></p>
+            </ul>
+            <div class="menuBottom">
+                <a class="menuBottomItem" href="">Privacy Policy</a>
+                <span class="menuBottomItem">NMLS# 282701</span>
+                <img id="ehlLogoWhite" class="menuBottomItem ehlLogoWhite" src="/Assets/Logos/ehlLogoWhite.svg" alt="Mortgage Center">
+                <img id="mcLogoOnMenu" class="menuBottomItem mcLogoOnMenu" src="/Assets/Logos/mcLogoWhite.svg" alt="Mortgage Center">
+        </nav>
+    </div>
+    
+    
+        
+    <section class="section hero" id="allProductsHero">
+        <div class="image-container-polaroid">
+        <div class="image-container">
+            <img src="/Assets/Images/New Applications/All Products Page/Header Image.jpg" alt="House" class="image sectionImg">
+        </div>
+    </div>
+        <div class="contentRt">
+            <div class="text-section">
+                <h1 class="headline">Products listed from most popular to least popular</h1>
+                <p class="paragraph">
+                    Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
+                    Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
+                </p>
+            </div>
+            <div class="buttons-group">
+                <button class="button primary-button ctaBtnPri">Primary Action</button>
+                <button class="button secondary-button">Secondary Action</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="wmHero">
+        <div class="contentLt whiteContent" id="wmHeroContent">
+            <h2 class="headline ">What Mortgage Is Right For Me?</h2>
+                <p class="paragraph">
+                    Take a quick quiz to help you figure out which of our products is right for your home buying needs.
+                </p>
+                <div class="buttons-group">
+                    <button class="button primary-button ctaBtnPri btnLarge">Let's Find Out!</button>
+                </div>
+        </div>
+        <div class="image-container">
+            <img class="wmHeroImg" id="wmHeroImage" src="/Assets/Images/New Applications/All Products Page/Header Image.jpg" alt="House" class="image">
+        </div>
+    </section>
+    
+    <!-- <section class="section blurb contentCtr">
+        <h3 id="blurbText">Compare Loan Products to See What Works Best for You</h3>
+        <div class="buttons-group">
+            <button id="blurbBtnPri" class="button primary-button ctaBtnPri">Show Me How</button>
+            <button id="blurbBtnSec" class="button secondary-button">View a Comparison Chart</button>
+        </div>
+    </section> -->
+
+    <section class="section allProducts" id="allProductsFilters">
+        <h3 class="cardListTitle" id="allProductsTitle">Mortgage Center's diverse product offering has you covered.</h3>
+        <p id="allProductCaption">Click a product for details, current rates, uses cases and more.</p>
+        
+
+        
+
+            <div class="filters">
+                <div id="activeFilters">
+                        <p id="activeFiltersLabel">Active Filters:</p>
+                        <button class="activeFilters" id="filter1" onclick="removeFilter1()">Filter 1 text</button>
+                        <button class="activeFilters" id="filter2" onclick="removeFilter2()">Filter 2 text</button>
+                        <button class="activeFilters" id="filter3" onclick="removeFilter3()">Filter 3 text</button>
+                </div>
+                <div class="filterList">
+                    <!--create a dropdown with 5 options-->
+                    <span id="sortBy">Sort By:</span>
+                    <select class="filterDropDown" name="newOrExisting" id="newOrExistingFilter">
+                        <option value="all"></option>
+                        <option id="newFilterBtn" value="New Purchase Options">New Purchase Options</option>
+                        <option id="existingFilterBtn" value="Existing Loan Options">Existing Loan Options</option>
+                    </select>
+                    <select class="filterDropDown" name="categoryFilter" id="categoryFilter">
+                        <option value="all"></option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                    </select>
+                    <select class="filterDropDown" name="rateFilter" id="categoryFilter2">
+                        <option value="all"></option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                    </select>
+                </div>
+            </div>
+            </section>
+
+            <!-- ==================================================  Product Cards Begin Here ================================================== -->
+            <!-- ==================================================  Product Cards Begin Here ================================================== -->
+            <!-- ==================================================  Product Cards Begin Here ================================================== -->
+            
+
+
+
+
+<!-- ============  Expanded Product Card Here ============= -->
+<!-- ============  Expanded Product Card Here ============= -->
+<!-- ============  Expanded Product Card Here ============= -->
+
+<section class="wmHero atcCardExpanded initHide" id="atcCardExpanded">
+    <div class="contentLt whiteContent wmHeroContent" id="atcCardExpandedContent">
+        <h2 class="headline" id="atcCardExpandedHeadline">15-Year Fixed Rate Mortgage</h2>
+            <p class="paragraph truncate" id="atcCardExpandedPTruncate">
+                This is a lot of text that will be displayed when the user clicks on the product card. It keeps going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and going and
+            </p>
+
+            <div class="buttons-group">
+                <button class="button primary-button ctaBtnPri btnLarge">Full Details</button>
+            </div>
+    </div>
+    <div class="image-container">
+        <img id="wmHeroImage" src="/Assets/Images/New Applications/All Products Page/Header Image.jpg" alt="House" class="image">
+    </img>
+    </div>
+</section>
+
+<!-- ============  Expanded Product Card Here ============= -->
+<!-- ============  Expanded Product Card Here ============= -->
+<!-- ============  Expanded Product Card Here ============= -->                
+
+
+<section class="section allProducts" id="allProductsList">
+
+            <!-- ============  Product Card ============= -->
+            <!-- ============  Product Card ============= -->
+
+            <div id="eachCardShouldHaveAnID" class="atc">
+                <img src="/Assets/Images/New Applications/All Products Page/Header Image.jpg" alt="ATC 1" class="atcImg">
+                <div class="atcContent">
+                    <h4 class="atcTitle">15-Year Fixed Rate Mortgage</h4>
+                    <p class="atcDescription truncate-sm">This is a description of the product listed above. 
+                        It will be a brief description of the product and its uses.</p>
+            </div>
+            <div class="atcBtnGrp">
+                <a class="button primary-button atcBtn">More Info</a>
+                
+                <div class="compare">
+                <label for="compareIDsName" class="compareLabel">Compare</label>
+                    <input name="compareIDsName" type="checkbox">
+                    <span class="checkmark"></span>
+                </div>
+            </div>
+            </div>
+        
+            <!-- ==========  Product Card End =========== -->
+            <!-- ==========  Product Card End =========== -->
+           
+            
+        </div>
+
+        <button class="button primary-button ctaBtnPri" id="viewAllBtn" onclick="viewAll()">View All</button>
+    </section>
+
+            <!-- ============End of All Product Cards ============= -->
+            <!-- ============End of All Product Cards ============= -->
+            <!-- ============End of All Product Cards ============= -->
+            <!-- ============End of All Product Cards ============= -->
+            <!-- ============End of All Product Cards ============= -->
+    
+    <!-- <section class="section compareChart">
+        <div class="chartBody"></div>
+    </section> -->
+
+        
+        <section class="section featuredATCs" id="">
+            <h3 class="cardListTitle">Featured Articles, Tools, and Calculators</h3>
+            <!-- ============  Product Card ============= -->
+            <!-- ============  Product Card ============= -->
+            <div class="featuredATCs">
+            <div id="eachCardShouldHaveAnID" class="atc">
+                <img src="/Assets/Images/New Applications/All Products Page/Header Image.jpg" alt="ATC 1" class="atcImg">
+                <div class="atcContent">
+                    <h4 class="atcTitle truncate-sm">Pertinant Blog Title</h4>
+                    <p class="atcDescription truncate-md">This is the first couple sentences of the blog as many words that will fit until it reaches the character limit. We'll probably copy the first paragraph into the json or something. still working that out.</p>
+            </div>
+            <div class="atcBtnGrp">
+                <a class="button primary-button atcBtn">Read More</a>
+            </div>
+            </div>
+        </div>
+            <!-- ==========  FACTS Card End =========== -->
+            <!-- ==========  FACTS Card End =========== -->
+
+    </section>
+
+    <section class="section about">
+        <div class="contentCTR">
+            <img class="image mcAboutImg" id="aboutLogo" src="/Assets/Logos/mcLogoColor.svg"></img>
+            <h2 class="headline">About Mortgage Center</h2>
+            <p class="paragraph">
+                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
+                Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
+            </p>
+        </div>
+        <div class="awardsGrp">
+            <img class="awards" src="/Assets/Logos/mcLogoColor.svg" alt="Mortgage Center">
+            <img class="awards" src="/Assets/Logos/mcLogoColor.svg" alt="Mortgage Center">
+            <img class="awards" src="/Assets/Logos/mcLogoColor.svg" alt="Mortgage Center">
+            <img class="awards" src="/Assets/Logos/mcLogoColor.svg" alt="Mortgage Center">
+        </div>
+    </section>
+
+    <section class="section contactUs" id="contactUs">
+        <h3 class="headline contactHeadline">Schedule a Discovery Call</h3>
+        <div class="contactForm contentLt discoveryCall" id="discoveryCall">
+            
+            <h4 class="contactUsSubHead">We don't bite! Blah Blah Blah</h4>
+            <p class="paragraph contactUsParagraph">
+                
+                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
+                Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. 
+                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
+            </p>
+        </div>
+        <form class="contactForm contentRt" id="sfForm" action="">
+            <div class="inputGrp">
+                <label for="cxfirstName">First Name:</label>
+                <input type="text" id="cxfirstName" name="cxfirstName">
+            </div>
+            
+            <div class="inputGrp">
+                <label for="cxlastName">Last Name:</label>
+                <input type="text" id="cxlastName" name="cxlastName">
+            </div>
+            
+            <div class="inputGrp">
+                <label for="cxEmail">Email:</label>
+                <input type="email" id="cxEmail" name="cxEmail">
+            </div>
+            
+            
+            <div class="inputGrp">
+                <label for="cxPhoneNum">Phone:</label>
+                <input type="tel" id="cxPhoneNum" name="cxPhoneNum">
+            </div>
+            
+            <button id="submitFormBtn" class="button primary-button ctaBtnPri" onclick="submitForm()">Request a Call</button>
+            
+        </form>
+    </section>
+
+    <footer>
+        <div class="footerContent">
+            <div class="footerSection">
+                <h3>Section 1</h3>
+                <p>Link 1</p>
+                <p>Link 2</p>
+                <p>Link 3</p>
+            </div>
+            <div class="footerSection">
+                <h3>Section 2</h3>
+                <p>Link 1</p>
+                <p>Link 2</p>
+                <p>Link 3</p>
+            </div>
+            <div class="footerSection">
+                <h3>Section 3</h3>
+                <p>Link 1</p>
+                <p>Link 2</p>
+                <p>Link 3</p>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>© 2024-2025 Mortgage Center</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+        </div>
+    </footer>
+
+    <modal id="loginModal" style="display: none;">
+        <div class="modalContent">
+            <span><button class="close" onclick="closeModal()">&times;</button></span>
+            <h2>Login To Your Account</h2>
+            <a class="ctaBtnOption" href="apply.mortgagecenter.com">Application Login</a>
+            <a href="apply.mortgagecenter.com">Account Management</a>
+        </div>
+    </modal>
+    
+    <script src="/Menu/js/menu.js"></script>
+    <script src="/textTrucator.js"></script>
+    <script src="/contactUsForm.js"></script>
+
+    
+</body>
+</html>

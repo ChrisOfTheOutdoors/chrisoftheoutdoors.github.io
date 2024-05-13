@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="/SiteCss/global.css">
+
+<style>
+.featuredBlogSection {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 1px solid #dde1e6;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredBlogContent {
+    
+}
+
+.featuredBlogGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #dde1e6;
+    padding: 4%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.blogBlurb {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+}
+
+.featuredBlogGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    gap: 2rem;
+}
+
+.blogBlurbTitle {
+    margin: 0;
+}
+
+.featuredBlogContent {
+    margin: 0;
+    width: 100%;
+}
+
+.featuredBlogImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dde1e6;
+    width: 100%;
+}
+
+.featuredBlogImg {
+    height: 80%;
+    width: auto;
+    background-color: gray;
+}
+
+</style>
+
+
+<section class="featuredBlogSection">
+    
+    <div class="featuredBlogGroup featuredBlogGrid">
+        <div class="blogBlurb">
+            <h3 class="headline blogBlurbTitle">Blog Title</h3>
+            <p class="featuredBlogContent paragraph" id="featuredBlog1">Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec...</p>
+        </div>
+        <div class="blogBlurb">
+            <h3 class="headline blogBlurbTitle">Blog Title</h3>
+            <p class="featuredBlogContent paragraph" id="featuredBlog2">Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec...</p>
+        </div>
+        <div class="blogBlurb">
+            <h3 class="headline blogBlurbTitle">Blog Title</h3>
+            <p class="featuredBlogContent paragraph" id="featuredBlog3">Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec...</p>
+        </div>
+        <div class="blogBlurb">
+            <h3 class="headline blogBlurbTitle">Blog Title</h3>
+            <p class="featuredBlogContent paragraph" id="featuredBlog4">Nibh nullam vitae semper pharetra sit enim id. Ut eu non massa nec...</p>
+        </div>
+    </div>
+
+        <img class="featuredBlogImg" id="featuredBlogImg" src="" alt="Calendar" />
+
+</section>

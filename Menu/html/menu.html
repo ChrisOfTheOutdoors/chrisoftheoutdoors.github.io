@@ -1,0 +1,32 @@
+<div class="navBar">
+    <img class="mcLogoColor" src="/Assets/Logos/mcLogoColor.svg" alt="Mortgage Center">
+    <div class="menuRt">
+        <a href="menu.html"><img class="searchIcon navbarItem" id="navSearch" src="/Assets/Icons/search-solid.svg" alt="searchIcon"></a>
+        <a id="navPhoneNum" class="phoneNum navbarItem" href="tel:800-353-4449">800-353-4449</a>
+        <button id="navLoginBtn" class="ctaBtnPri navbarItem" onclick="loginModal()">Login</button>
+        <button class="hamburger navbarItem" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav id="menu" class="menu">
+        <ul>
+            <p><a class="menuItem" href="">First Time Home Buyers</a></p>
+            <p><a class="menuItem" href="about.html">New Applications</a></p>
+            <p><a class="menuItem" href="contact.html">Existing Accounts</a></p>
+            <p><a class="menuItem" href="menu.html">Mortgage University</a></p>
+            <p><a class="menuItem" href="menu.html">Credit Union Partners</a></p>
+            <p><a class="menuItem" href="menu.html">About Us</a></p>
+        </ul>
+    </nav>
+</div>
+
+<modal id="loginModal" style="display: none;">
+    <div class="modalContent">
+        <span><button class="close" onclick="closeModal()">&times;</button></span>
+        <h2>Login To Your Account</h2>
+        <a class="ctaBtnOption" href="apply.mortgagecenter.com">Application Login</a>
+        <a href="apply.mortgagecenter.com">Account Management</a>
+    </div>
+</modal>

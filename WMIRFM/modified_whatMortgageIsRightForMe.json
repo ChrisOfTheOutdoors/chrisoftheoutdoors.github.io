@@ -1,0 +1,457 @@
+{
+    "loansAndQuiz": [
+            {
+                "id": 1,
+                "text": "New Purchase or Refinancing?",
+                "options": [
+                    {
+                        "text": "New Purchase",
+                        "nextQuestion": 2
+                    },
+                    {
+                        "text": "Refinancing",
+                        "nextQuestion": 22
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "What type of property are you looking to purchase?",
+                "options": [
+                    {
+                        "text": "A Condo",
+                        "recommendation": "Condominium Loan"
+                    },
+                    {
+                        "text": "A Manufactured Home",
+                        "recommendation": "Manufactured Home Loan"
+                    },
+                    {
+                        "text": "A Home with a Hobby Farm",
+                        "recommendation": "Hobby Farm Loan"
+                    },
+                    {
+                        "text": "A Single Family Home",
+                        "nextQuestion": 3
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "text": "Building, buying, or some of both?",
+                "options": [
+                    {
+                        "text": "Building",
+                        "recommendation": "Construction Loan"
+                    },
+                    {
+                        "text": "Buying and Renovating",
+                        "recommendation": "Renovation Loan"
+                    },
+                    {
+                        "text": "Buying",
+                        "nextQuestion": 4
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "text": "Okay, do any of these sound like you?",
+                "options": [
+                    {
+                        "text": "I'm a Doctor",
+                        "recommendation": "Doctor Loan"
+                    },
+                    {
+                        "text": "I'm a Military Veteran",
+                        "recommendation": "Veterans Administration (VA) Loan"
+                    },
+                    {
+                        "text": "I'm a First Time Home Buyer",
+                        "recommendation": "First Time Home Buyer (FHA) Loan"
+                    },
+                    {
+                        "text": "Nope! What else do you have?",
+                        "nextQuestion": 5
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "text": "Any special financial considerations?",
+                "options": [
+                    {
+                        "text": "I want to buy a higher priced home",
+                        "recommendation": "jumboLoan"
+                    },
+                    {
+                        "text": "I don't want to pay a down payment",
+                        "recommendation": "zeroDownPaymentLoan"
+                    },
+                    {
+                        "text": "I have student debts that are weighing on my decision making process",
+                        "recommendation": "studentDebtLoan"
+                    },
+                    {
+                        "text": "I want to avoid having to pay PMI if possible",
+                        "recommendation": "noPMILoan"
+                    },
+                    {
+                        "text": "None of these.",
+                        "nextQuestion": 6
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "text": "Almost there! Interested in any of these special programs?",
+                "options": [
+                    {
+                        "text": "My family wants to help with my down payment",
+                        "recommendation": "familyHelpLoan"
+                    },
+                    {
+                        "text": "I\u2019d like a low down payment and to be enrolled in a homeownership education program",
+                        "recommendation": "homeReady"
+                    },
+                    {
+                        "text": "I\u2019d like a low down payment and may need help with my credit",
+                        "recommendation": "creditHelpLoan"
+                    },
+                    {
+                        "text": "None of these apply. Let's see some other options.",
+                        "nextQuestion": 7
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "text": "Last question: Would you prefer a consistent rate, or a rate that can change over time?",
+                "options": [
+                    {
+                        "text": "I want consistency. Fixed rate all the way!",
+                        "recommendation": "30-Year Fixed Rate Mortgage"
+                    },
+                    {
+                        "text": "A lower rate for the first few years matches my financial goals.",
+                        "recommendation": "7/1 A"
+                    }
+                ]
+            },
+        
+            {
+                "id": 22,
+                "text": "What type of property are you looking to refinance?",
+                "options": [
+                    {
+                        "text": "A Condo",
+                        "recommendation": "Condominium Loan"
+                    },
+                    {
+                        "text": "A Manufactured Home",
+                        "recommendation": "Manufactured Home Loan"
+                    },
+                    {
+                        "text": "A Home with a Hobby Farm",
+                        "recommendation": "Hobby Farm Loan"
+                    },
+                    {
+                        "text": "A Single Family Home",
+                        "nextQuestion": 23
+                    }
+                ]
+            },
+            {
+                "id": 23,
+                "text": "Building, buying, or some of both?",
+                "options": [
+                    {
+                        "text": "Building",
+                        "recommendation": "construction Loan"
+                    },
+                    {
+                        "text": "Buying and Renovating",
+                        "recommendation": "renovationLoan"
+                    },
+                    {
+                        "text": "Buying",
+                        "nextQuestion": 24
+                    }
+                ]
+            },
+            {
+                "id": 24,
+                "text": "Okay, do any of these sound like you?",
+                "options": [
+                    {
+                        "text": "I'm a Doctor",
+                        "recommendation": "doctorLoan"
+                    },
+                    {
+                        "text": "I'm a Military Veteran",
+                        "recommendation": "veteranLoan"
+                    },
+                    {
+                        "text": "I'm a First Time Home Buyer",
+                        "recommendation": "First Time Home Buyer (FHA) Loan"
+                    },
+                    {
+                        "text": "Nope! What else do you have?",
+                        "nextQuestion": 25
+                    }
+                ]
+            },
+            {
+                "id": 25,
+                "text": "Any special financial considerations?",
+                "options": [
+                    {
+                        "text": "I want to buy a higher priced home",
+                        "recommendation": "jumboLoan"
+                    },
+                    {
+                        "text": "I don't want to pay a down payment",
+                        "recommendation": "zeroDownPaymentLoan"
+                    },
+                    {
+                        "text": "I have student debts that are weighing on my decision making process",
+                        "recommendation": "studentDebtLoan"
+                    },
+                    {
+                        "text": "I want to avoid having to pay PMI if possible",
+                        "recommendation": "noPMILoan"
+                    },
+                    {
+                        "text": "None of these.",
+                        "nextQuestion": 26
+                    }
+                ]
+            },
+            {
+                "id": 26,
+                "text": "Almost there! Interested in any of these special programs?",
+                "options": [
+                    {
+                        "text": "My family wants to help with my down payment",
+                        "recommendation": "familyHelpLoan"
+                    },
+                    {
+                        "text": "I\u2019d like a low down payment and to be enrolled in a homeownership education program",
+                        "recommendation": "homeReady"
+                    },
+                    {
+                        "text": "I\u2019d like a low down payment and may need help with my credit",
+                        "recommendation": "creditHelpLoan"
+                    },
+                    {
+                        "text": "None of these apply. Let's see some other options.",
+                        "nextQuestion": 27
+                    }
+                ]
+            },
+            {
+                "id": 27,
+                "text": "Last question: Would you prefer a consistent rate, or a rate that can change over time?",
+                "options": [
+                    {
+                        "text": "I want consistency. Fixed rate all the way!",
+                        "recommendation": "30-Year Fixed Rate Mortgage"
+                    },
+                    {
+                        "text": "A lower rate for the first few years matches my financial goals.",
+                        "recommendation": "7/1 ARM - Refi"
+                    }
+                ]
+            },
+                {
+                    "name": "Condominium Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Manufactured Home Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Hobby Farm Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Construction Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Renovation Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Doctor Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Veterans Administration (VA) Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "First Time Home Buyer (FHA) Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "15-Year Fixed Rate Mortgage",
+                    "description": "A fixed rate mortgage meant to be paid off over 15 years.",
+                    "url": "15yearFixed.html",
+                    "suggestedLoans": [
+                        "thirtyYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "30-Year Fixed Rate Mortgage",
+                    "description": "A fixed rate mortgage meant to be paid off over 30 years.",
+                    "url": "30yearFixed.html",
+                    "suggestedLoans": [
+                        "fifteenYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Jumbo Home Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 30 years.",
+                    "url": "30yearFixed.html",
+                    "suggestedLoans": [
+                        "fifteenYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Zero Down Payment Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 30 years.",
+                    "url": "30yearFixed.html",
+                    "suggestedLoans": [
+                        "fifteenYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Student Debt Relief Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 30 years.",
+                    "url": "30yearFixed.html",
+                    "suggestedLoans": [
+                        "fifteenYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "PMI Saver Mortgage",
+                    "description": "A fixed rate mortgage meant to be paid off over 30 years.",
+                    "url": "30yearFixed.html",
+                    "suggestedLoans": [
+                        "fifteenYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Best Score Family Helper Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 30 years.",
+                    "url": "30yearFixed.html",
+                    "suggestedLoans": [
+                        "fifteenYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "HomeReady Mortgage",
+                    "description": "A fixed rate mortgage meant to be paid off over 30 years.",
+                    "url": "30yearFixed.html",
+                    "suggestedLoans": [
+                        "fifteenYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Credit Help Loan",
+                    "description": "A fixed rate mortgage meant to be paid off over 30 years.",
+                    "url": "30yearFixed.html",
+                    "suggestedLoans": [
+                        "fifteenYearFixed",
+                        "firstTimeHomeBuyer"
+                    ],
+                    "suggestedCalculator": "Refinance Calculator",
+                    "blogUrl": "blog-about-refinancing"
+                },
+                {
+                    "name": "Placeholder for refi loan types"
+                }
+            ]
+}

@@ -1,0 +1,28 @@
+<style>
+.atc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 12px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        background-color: darkmagenta;
+    }
+
+    .atcImg {
+        width: 100%; /* Ensure image fits card's width */
+        height: 100%; /* Ensure image fills the container height */
+        object-fit: cover; /* Keeps the aspect ratio intact */
+        background-color: aqua;
+    }
+</style>
+<section id="featuredATCs">
+    <div id="eachCardShouldHaveAnID" class="atc">
+        <img src="/Assets/Images/New Applications/All Products Page/Header Image.jpg" alt="ATC 1" class="atcImg">
+        <h3>ATC 1</h3>
+        <p>Blurb about ATC 1</p>
+        <a class="button primary-button">More Info</a>
+    </div>

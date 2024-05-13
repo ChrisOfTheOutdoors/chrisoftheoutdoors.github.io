@@ -1,0 +1,413 @@
+
+:root {
+    --font-primary: 'Rubik', 'Montserrat', sans-serif;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-green: #40a829;
+    --color-blue: #001d6c;
+    --color-gray: #21272a;
+}
+
+body {margin: 0;
+    padding: 0;
+    font-family: 'Rubik', 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: var(--mcBlack);}
+
+a {text-decoration: none;
+    color: var(--mcBlack);}
+    .button {padding: 1rem 2rem; /* Considering padding on both sides */
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        border: 2px solid transparent; /* To maintain the same dimensions for both buttons */
+        transition: background-color .3s, color .3s; padding: 8px 16px;}
+    
+    .primary-button {background-color: #40a829;
+        color: #fff;}
+    
+    .secondary-button {background-color: #fff;
+        color: #40a829;
+        border-color: #40a829;}
+    
+    .ctaBtnPri {background-color: var(--mcGreen);
+        color: #fff;
+        padding: 0.6rem 1.8rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid var(--mcGreen);}
+
+
+/* Drop down filter buttons */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Styles for navigation bar links */
+.navbar a {
+    float: left;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Styles for dropdown containers */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Styles for dropdown buttons */
+.dropdown .dropbtn {
+    color: white;
+    padding: 14px 20px;
+    background-color: inherit;
+    border: none;
+    font-size: 16px;
+}
+
+/* Dropdown content container */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Styles for dropdown links */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+section {
+    padding: 20px;
+
+}
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+
+}
+.atc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 308px;
+    height: 422px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color:#fff;
+}
+
+.atcImg {
+    width: 100%;
+    object-fit: cover; /* Keeps the aspect ratio intact */
+    
+}
+
+/* Menu CSS */
+/* Menu CSS */
+/* Menu CSS */
+/* Menu CSS */
+
+.navBar {
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbarItem {
+margin: 0 8px;
+}
+.mcLogoColor {
+width: 100px;
+height: auto;
+}
+.searchIcon {
+width: 30px;
+height: auto;
+color: var(--mcGray) ;
+}
+.menuRt {
+box-sizing: border-box; /* Include padding and border in the width calculation */
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.hamburger {
+cursor: pointer;
+display: block;
+position: relative;
+transition: all 0.3s ease-in-out;
+background-color: #fff;
+border: 2px solid var(--outline);
+padding: 4px 7px;
+border-radius: 4px;
+
+}
+.hamburger span {
+display: block;
+width: 30px;
+height: 3px;
+margin: 5px auto;
+background-color: #333;
+transition: all 0.3s ease-in-out;
+border-radius: 100px;
+}
+
+.hamburger.active span:nth-child(1) {
+transform: translateY(-8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
+
+#menu {
+position: fixed;
+top: 89.3px;
+right: -100%;
+width: 50vw;
+height: 100vh;
+background-color: var(--mcNavy);
+font-size: 2rem;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+transition: all 0.4s ease-in-out;
+z-index: 1000;
+text-decoration: none;
+color: #fff;
+}
+
+#menu.open {
+right: 0; /* Slide into view */
+}
+
+.menuItem {
+ color: #fff;
+ font-weight: 400;   
+}
+.menuItem:hover {
+    color: var(--mcGreen);
+}
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        padding: 20px 20px;
+    }
+    #menu {
+        width: 100vw;
+    }
+    .menuRt {
+        display: block;
+    }
+    .hamburger {
+        padding: 4px 8px;
+        border: none;
+    }
+    .hamburger span {
+        width: 20px;
+        height: 2px;
+        margin: 4px auto;
+    }
+    #navSearch, #navPhoneNum, #navLoginBtn {
+        display: none;
+    }
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* New: Make sure the navbar is set to a fixed position at the top of the viewport */
+.navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+}
+
+/* Account for the navbar height when positioning content */
+.section {
+    display: flex;
+    padding: 5.8%;
+    background-color: #fff;
+    border-radius: 12px;
+    
+    margin-top: 70px; /* Adjust based on navbar height */
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 80px; /* Assuming there's a gap between the image and text */
+    background-color: #dde1e6;
+    border-radius: 12px;
+    position: relative;
+    width: fi;
+}
+
+.image {
+    width: 500px;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.content {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.caption {
+    color: #001d6c;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: normal; /* 100% line height */
+}
+
+.headline {
+    color: #21272a;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: normal; /* 110% line height */
+    margin-top: 28px; /* space from caption to headline */
+}
+
+.paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4; /* 140% line height */
+    color: #21272a;
+}
+
+.buttons-group {
+    display: flex;
+    gap: 16px;
+}
+
+.button {
+    padding: 1rem 2rem; /* Considering padding on both sides */
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent; /* To maintain the same dimensions for both buttons */
+    transition: background-color .3s, color .3s;
+}
+
+.primary-button {
+    background-color: #40a829;
+    color: #fff;
+}
+
+.secondary-button {
+    background-color: #fff;
+    color: #40a829;
+    border-color: #40a829;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .section {
+        flex-direction: column;
+        padding: 40px;
+        margin-top: 90px; /* Ensure the section content is below the navbar */
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .headline {
+        font-size: 32px;
+    }
+
+    .buttons-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 24px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section {
+        padding: 20px;
+    }
+
+    .headline {
+        font-size: 18px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+}
+
